@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- Language Switcher -->
     <div class="custom-languageSwitch-wrapper">
         <button class="custom-languageSwitch-btn" onclick="changeLangTo('en')" data-lang="en">EN</button>
         <button class="custom-languageSwitch-btn" onclick="changeLangTo('de')" data-lang="de">DE</button>
@@ -16,7 +19,90 @@
         <language-data-lang lang-name="en">Englisch</language-data-lang>
         <language-data-lang lang-name="it">Italienisch</language-data-lang>
     </language-data>
+    <!-- slider -->
+    <hup-swiper id="sw1" config-data="" navi-input="0">
+        <article class="card">
+            <header class="card__header">
+                <h3>title 1</h3>
+            </header>
+            <div class="card__main">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ut non fugiat illum error quasi
+                    exercitationem unde blanditiis corrupti, repudiandae soluta esse doloribus itaque rerum tempora,
+                    sint ratione enim impedit.</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h3>title 2</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card active">
+            <header class="card__header">
+                <h3>title 3</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h3>title 4</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h3>title 5</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h3>title 6</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h3>title 7</h3>
+            </header>
+            <div class="card__main">
+                <p>some text here</p>
+            </div>
+            <footer class="card__footer"><a href="">link</a></footer>
+        </article>
+    </hup-swiper>
+    <br>
+    <button onclick="Hup_Swiper_Next('sw1')">Test Prev</button>
+    <button onclick="Hup_Swiper_Next('sw1')">Test Next</button>
 
     <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/language-switcher/language-switcher.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/hup-swiper/hup-swiper.js"></script>
+    <script>
+        HupSwiperConfig({
+            id: "sw1",
+            slides: 5,
+            //activePos: "center",
+            loop: true,
+            //gap: 50,
+            speed: 400
+        })
+    </script>
 </body>
+
 </html>

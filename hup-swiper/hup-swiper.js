@@ -236,7 +236,7 @@ customElements.define('hup-swiper', class hupSwiper extends HTMLElement {
 
 
 //configuation script
-const HupSwiperConfig = (data) => {
+function HupSwiperConfig (data) {
     const hasProp = (prop, arrayD) => {
         return prop in arrayD
     }
