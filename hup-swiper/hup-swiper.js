@@ -4,9 +4,19 @@
  * created: 22.08.2023
  */
 /**
- *  <hup-swiper id="sw1" config-data="">
+ *  <hup-swiper id="sw1" config-data="" navi-input="0">
 
     </hup-swiper>
+    HupSwiperConfig({
+        id: "sw1",
+        slides: 5,
+        //activePos: "center",
+        loop: true,
+        //gap: 50,
+        speed: 400
+    })
+
+    autoPlay("sw1", 5000);
  */
 customElements.define('hup-swiper', class hupSwiper extends HTMLElement {
     static get observedAttributes() {
