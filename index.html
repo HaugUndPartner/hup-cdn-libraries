@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="custom-languageSwitch-wrapper">
+        <button class="custom-languageSwitch-btn" onclick="changeLangTo('en')" data-lang="en">EN</button>
+        <button class="custom-languageSwitch-btn" onclick="changeLangTo('de')" data-lang="de">DE</button>
+        <button class="custom-languageSwitch-btn" onclick="changeLangTo('it')" data-lang="it">IT</button>
+    </div>
+    <p id="test-text" class="test">Deutsch</p>
+    <language-data default-lang="de" target-id="test-text">
+        <language-data-lang lang-name="en">Englisch</language-data-lang>
+        <language-data-lang lang-name="it">Italienisch</language-data-lang>
+    </language-data>
+
+    <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/language-switcher/language-switcher.js"></script>
+</body>
+</html>
