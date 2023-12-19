@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            /* display: flex; */
+            width: 350px;
+            min-width: 350px;
+            background-color: bisque;
+        }
+    </style>
 </head>
 
 <body>
@@ -88,12 +101,12 @@
         </article>
     </hup-swiper>
     <br>
-    <button onclick="Hup_Swiper_Next('sw1')">Test Prev</button>
+    <button onclick="Hup_Swiper_Prev('sw1')">Test Prev</button>
     <button onclick="Hup_Swiper_Next('sw1')">Test Next</button>
 
     <script
         src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/language-switcher/language-switcher.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/hup-swiper/hup-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries/hup-swiper/hup-swiper.js"></script>
     <script>
 
         HupSwiperConfig({

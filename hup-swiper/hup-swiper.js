@@ -289,7 +289,6 @@ function autoPlay (targetId, delay){
 }
 
 function Hup_Swiper_Next(swiperId) {
-    console.log('test Hup_Swiper_Next')
     let targetE = document.querySelector(`#${swiperId}`);
     let currentV = targetE.getAttribute('navi-input');
     let x = () => {
@@ -301,7 +300,6 @@ function Hup_Swiper_Next(swiperId) {
 
 }
 function Hup_Swiper_Prev(swiperId) {
-    console.log('test Hup_Swiper_Prev')
     let targetE = document.querySelector(`#${swiperId}`);
     let currentV = targetE.getAttribute('navi-input');
     let x = () => {
