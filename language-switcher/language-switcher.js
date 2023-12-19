@@ -1,3 +1,9 @@
+/**
+ * Company: Haug und Partner
+ * Programmer: Fabian Grießbach
+ * created: 19.12.2023
+ */
+
 let langSwitcherReady = false; 
 const localStorageVar = "hup-lang-switcher-current";
 const updateControlBtnsClass = "custom-languageSwitch-btn";
