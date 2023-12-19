@@ -272,7 +272,24 @@ function HupSwiperConfig (data) {
     }
 }
 
+function autoPlay (targetId, delay){
+    let targetE = document.querySelector(`#${targetId}`); 
+    const next = () =>{
+        let currentV = targetE.getAttribute('navi-input'); 
+        let x = ()=>{
+            let test = Number(currentV); 
+            test += 1; 
+            return test; 
+        }; 
+        targetE.setAttribute('navi-input',x()); 
+    }
+    const swiperAutoplay = setInterval(()=>{
+        next();
+    }, delay)
+}
+
 function Hup_Swiper_Next(swiperId) {
+    console.log('test Hup_Swiper_Next')
     let targetE = document.querySelector(`#${swiperId}`);
     let currentV = targetE.getAttribute('navi-input');
     let x = () => {
@@ -284,6 +301,7 @@ function Hup_Swiper_Next(swiperId) {
 
 }
 function Hup_Swiper_Prev(swiperId) {
+    console.log('test Hup_Swiper_Prev')
     let targetE = document.querySelector(`#${swiperId}`);
     let currentV = targetE.getAttribute('navi-input');
     let x = () => {
