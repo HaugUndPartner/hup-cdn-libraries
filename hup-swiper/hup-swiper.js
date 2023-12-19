@@ -289,6 +289,7 @@ function autoPlay (targetId, delay){
 }
 
 function Hup_Swiper_Next(swiperId) {
+    //
     let targetE = document.querySelector(`#${swiperId}`);
     let currentV = targetE.getAttribute('navi-input');
     let x = () => {
