@@ -91,9 +91,11 @@
     <button onclick="Hup_Swiper_Next('sw1')">Test Prev</button>
     <button onclick="Hup_Swiper_Next('sw1')">Test Next</button>
 
-    <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/language-switcher/language-switcher.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/language-switcher/language-switcher.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/HaugUndPartner/hup-cdn-libraries@main/hup-swiper/hup-swiper.js"></script>
     <script>
+
         HupSwiperConfig({
             id: "sw1",
             slides: 5,
@@ -102,6 +104,8 @@
             //gap: 50,
             speed: 400
         })
+
+        autoPlay("sw1", 5000);
     </script>
 </body>
 
