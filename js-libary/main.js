@@ -1,1 +1,3 @@
-import {testComponent} from './componets/test.js'; 
+var testFunc = (v) => {
+    console.log(`hello ${v}`)
+}
