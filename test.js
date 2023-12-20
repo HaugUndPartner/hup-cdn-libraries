@@ -1,1 +1,1 @@
-testComponent('fabian')
+testFunc('fabain')
