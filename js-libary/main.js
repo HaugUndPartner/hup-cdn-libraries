@@ -1,0 +1,1 @@
+import {testComponent} from './componets/test.js'; 
